@@ -1,0 +1,3 @@
+C:/Users/abc/CLionProjects/ACM/Week4/#1920/cmake-build-debug/CMakeFiles/_1920.dir
+C:/Users/abc/CLionProjects/ACM/Week4/#1920/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/abc/CLionProjects/ACM/Week4/#1920/cmake-build-debug/CMakeFiles/rebuild_cache.dir

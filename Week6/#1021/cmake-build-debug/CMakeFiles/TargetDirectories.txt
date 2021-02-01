@@ -1,0 +1,3 @@
+C:/Users/abc/CLionProjects/ACM/Week6/#1021/cmake-build-debug/CMakeFiles/_1021.dir
+C:/Users/abc/CLionProjects/ACM/Week6/#1021/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/abc/CLionProjects/ACM/Week6/#1021/cmake-build-debug/CMakeFiles/rebuild_cache.dir

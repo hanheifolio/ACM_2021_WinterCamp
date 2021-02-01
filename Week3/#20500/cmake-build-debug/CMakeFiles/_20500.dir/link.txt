@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\_20500.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\_20500.dir/objects.a @CMakeFiles\_20500.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\_20500.dir/objects.a -Wl,--no-whole-archive  -o _20500.exe -Wl,--out-implib,lib_20500.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\_20500.dir\linklibs.rsp

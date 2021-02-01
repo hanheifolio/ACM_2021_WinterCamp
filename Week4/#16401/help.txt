@@ -1,0 +1,86 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <math.h>
+#define MAX 4294967296
+using namespace std;
+
+bool isused[MAX];
+int m,n,temp;
+int bnsrch(int num);
+vector <int> v;
+int main() {
+
+    cin>>m>>n;
+    for(int i=0;i<n;i++)
+    {
+        cin>>temp;
+        v.push_back(temp);
+    }
+    sort(v.begin(),v.end());
+
+
+    return 0;
+}
+
+int bnsrch(int num)
+{
+    int left = v[0];
+    int right = v[n-1];
+    int mid = (left+right)/2;
+    int counter;
+    int return_output = -1;
+    int flag=-1;
+    while(1)
+    {
+        if(mid>=v[0])
+        {
+            flag  = 1;
+        }
+        counter = 0;
+
+        vector <int> temp_saver;
+        for(int i=0;i<n;i++)
+        {
+            if(mid>=v[i] && mid <2*v[i])
+            {
+                counter ++;
+            }
+            else if(mid >=v[i] && mid>=2*v[i])
+            {
+                counter++;
+                temp_saver.push_back(v[i]-mid);
+            }
+        }
+
+        for(int i=0;i<temp_saver.size();i++)
+        {
+            while(counter<=temp_saver[i])
+            {
+                temp_saver[i]-=mid;
+                counter++;
+            }
+        }
+
+
+
+        if(counter >= m)
+        {
+            return_output = mid;
+            mid = (right + mid+1)/2;
+        }
+
+        else if(counter <m && flag ==1)
+        {
+            right = mid;
+            mid /=2;
+        }
+
+        else if(counter < m && flag == -1)
+        {
+            mid = (right+mid)/2;
+            break;
+        }
+    }
+
+}
